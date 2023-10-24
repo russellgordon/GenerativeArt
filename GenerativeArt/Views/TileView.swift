@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TileView.swift
 //  GenerativeArt
 //
 //  Created by Russell Gordon on 2023-10-24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TileView: View {
     var body: some View {
         VStack {
             Rectangle()
@@ -19,5 +19,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TileView()
 }
