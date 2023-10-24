@@ -10,13 +10,13 @@ import SwiftUI
 struct TileView: View {
     
     // MARK: Stored properties
-    let flipOne = Int.random(in: 1...2)
+    let flipOne = Coin.flip()
     
     // MARK: Computed properties
     var body: some View {
         ZStack {
         
-            if flipOne == 1 {
+            if flipOne == .heads {
                 // Top right triangle
                 TriangleTopRight()
                     .stroke(.black)
