@@ -12,6 +12,7 @@
 		81EBED092AE81AA500DB0E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBED082AE81AA500DB0E23 /* Preview Assets.xcassets */; };
 		81EBED112AE81D3300DB0E23 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBED102AE81D3300DB0E23 /* TileView.swift */; };
 		81EBED132AE81D5100DB0E23 /* MosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBED122AE81D5100DB0E23 /* MosaicView.swift */; };
+		81EBED162AE8262200DB0E23 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBED152AE8262200DB0E23 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		81EBED082AE81AA500DB0E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81EBED102AE81D3300DB0E23 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		81EBED122AE81D5100DB0E23 /* MosaicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicView.swift; sourceTree = "<group>"; };
+		81EBED152AE8262200DB0E23 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				81EBED012AE81AA400DB0E23 /* GenerativeArtApp.swift */,
+				81EBED142AE825E900DB0E23 /* Helpers */,
 				81EBED0F2AE81CE300DB0E23 /* Views */,
 				81EBED052AE81AA500DB0E23 /* Assets.xcassets */,
 				81EBED072AE81AA500DB0E23 /* Preview Content */,
@@ -76,6 +79,14 @@
 				81EBED122AE81D5100DB0E23 /* MosaicView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		81EBED142AE825E900DB0E23 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81EBED152AE8262200DB0E23 /* Shape.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				81EBED112AE81D3300DB0E23 /* TileView.swift in Sources */,
 				81EBED132AE81D5100DB0E23 /* MosaicView.swift in Sources */,
 				81EBED022AE81AA400DB0E23 /* GenerativeArtApp.swift in Sources */,
+				81EBED162AE8262200DB0E23 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
