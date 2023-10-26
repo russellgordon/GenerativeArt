@@ -10,9 +10,34 @@ import SwiftUI
 struct TileView: View {
     
     // MARK: Stored properties
-    let flipOne = Coin.flip()
+    let flipOne = Coin.heads    // temporary to test colors
+    
+    // Choosing my markers
+    let markerOne = Color.red
+    let markerTwo = Color.blue
+    
+    // Decide on colors
+    let flipForColor = Coin.flip()
     
     // MARK: Computed properties
+    
+    // Set colors based on the coin flip
+    var colorOne: Color {
+        if flipForColor == .heads {
+            return markerOne
+        } else {
+            return markerTwo
+        }
+    }
+    var colorTwo: Color {
+        if flipForColor == .heads {
+            return markerTwo
+        } else {
+            return markerOne
+        }
+    }
+    
+    
     var body: some View {
         ZStack {
         
@@ -20,14 +45,14 @@ struct TileView: View {
                 // Top right triangle
                 TriangleTopRight()
                     .stroke(.black)
-                    .fill(.clear)
+                    .fill(colorOne)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
                 // Bottom left triangle
                 TriangleBottomLeft()
                     .stroke(.black)
-                    .fill(.clear)
+                    .fill(colorTwo)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
