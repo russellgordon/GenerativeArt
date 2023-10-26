@@ -17,6 +17,9 @@ struct TileView: View {
     // Determine whether top or bottom triangle gets filled with color 1
     let flipTwo = Coin.tails
     
+    // Determine the final fill color
+    let flipThree = Coin.heads
+    
     // Choosing my markers
     let markerOne = Color.red
     let markerTwo = Color.blue
@@ -34,6 +37,15 @@ struct TileView: View {
         return flipForColor == .heads ? markerTwo : markerOne
     }
     
+    // Determine fill color for remaining triangle
+    var remainingTriangleFillColor: Color {
+        if flipThree == .heads {
+            return colorTwo
+        } else {
+            return .clear
+        }
+    }
+    
     
     var body: some View {
         ZStack {
@@ -42,14 +54,14 @@ struct TileView: View {
                 // Top right triangle
                 TriangleTopRight()
                     .stroke(.black)
-                    .fill(flipTwo == .heads ? colorOne : .clear)
+                    .fill(flipTwo == .heads ? colorOne : remainingTriangleFillColor)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
                 // Bottom left triangle
                 TriangleBottomLeft()
                     .stroke(.black)
-                    .fill(flipTwo == .tails ? colorOne : .clear)
+                    .fill(flipTwo == .tails ? colorOne : remainingTriangleFillColor)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
@@ -58,14 +70,14 @@ struct TileView: View {
                 // Top left right
                 TriangleTopLeft()
                     .stroke(.black)
-                    .fill(flipTwo == .heads ? colorOne : .clear)
+                    .fill(flipTwo == .heads ? colorOne : remainingTriangleFillColor)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
                 // Bottom right triangle
                 TriangleBottomRight()
                     .stroke(.black)
-                    .fill(flipTwo == .tails ? colorOne : .clear)
+                    .fill(flipTwo == .tails ? colorOne : remainingTriangleFillColor)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
