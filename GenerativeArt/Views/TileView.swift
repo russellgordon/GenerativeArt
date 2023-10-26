@@ -10,14 +10,19 @@ import SwiftUI
 struct TileView: View {
     
     // MARK: Stored properties
-    let flipOne = Coin.heads    // temporary to test colors
+    
+    // Determine the diagonal (form)
+    let flipOne = Coin.tails    // temporary to test colors
+    
+    // Determine whether top or bottom triangle gets filled with color 1
+    let flipTwo = Coin.tails
     
     // Choosing my markers
     let markerOne = Color.red
     let markerTwo = Color.blue
     
     // Decide on colors
-    let flipForColor = Coin.flip()
+    let flipForColor = Coin.heads
     
     // MARK: Computed properties
     
@@ -37,14 +42,14 @@ struct TileView: View {
                 // Top right triangle
                 TriangleTopRight()
                     .stroke(.black)
-                    .fill(colorOne)
+                    .fill(flipTwo == .heads ? colorOne : .clear)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
                 // Bottom left triangle
                 TriangleBottomLeft()
                     .stroke(.black)
-                    .fill(colorTwo)
+                    .fill(flipTwo == .tails ? colorOne : .clear)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
@@ -53,14 +58,14 @@ struct TileView: View {
                 // Top left right
                 TriangleTopLeft()
                     .stroke(.black)
-                    .fill(.clear)
+                    .fill(flipTwo == .heads ? colorOne : .clear)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
                 // Bottom right triangle
                 TriangleBottomRight()
                     .stroke(.black)
-                    .fill(.clear)
+                    .fill(flipTwo == .tails ? colorOne : .clear)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
