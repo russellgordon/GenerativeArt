@@ -12,20 +12,20 @@ struct TileView: View {
     // MARK: Stored properties
     
     // Determine the diagonal (form)
-    let flipOne = Coin.tails    // temporary to test colors
+    let flipOne = Coin.flip()
     
     // Determine whether top or bottom triangle gets filled with color 1
-    let flipTwo = Coin.tails
+    let flipTwo = Coin.flip()
     
     // Determine the final fill color
-    let flipThree = Coin.heads
+    let flipThree = Coin.flip()
     
     // Choosing my markers
     let markerOne = Color.red
     let markerTwo = Color.blue
     
     // Decide on colors
-    let flipForColor = Coin.heads
+    let flipForColor = Coin.flip()
     
     // MARK: Computed properties
     
