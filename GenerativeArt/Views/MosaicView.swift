@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MosaicView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Grid(horizontalSpacing: 0, verticalSpacing: 0) {
+            GridRow {
+                TileView()
+                TileView()
+                TileView()
+            }
+        }
     }
 }
 
