@@ -53,15 +53,16 @@ struct TileView: View {
             if flipOne == .heads {
                 // Top right triangle
                 TriangleTopRight()
-                    .stroke(.black)
                     .fill(flipTwo == .heads ? colorOne : remainingTriangleFillColor)
+                    .stroke(.black)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
+
                 
                 // Bottom left triangle
                 TriangleBottomLeft()
-                    .stroke(.black)
                     .fill(flipTwo == .tails ? colorOne : remainingTriangleFillColor)
+                    .stroke(.black)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
@@ -69,15 +70,15 @@ struct TileView: View {
              
                 // Top left right
                 TriangleTopLeft()
-                    .stroke(.black)
                     .fill(flipTwo == .heads ? colorOne : remainingTriangleFillColor)
+                    .stroke(.black)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
 
                 // Bottom right triangle
                 TriangleBottomRight()
-                    .stroke(.black)
                     .fill(flipTwo == .tails ? colorOne : remainingTriangleFillColor)
+                    .stroke(.black)
                     // Make the shape be a square
                     .aspectRatio(1.0, contentMode: .fit)
                 
