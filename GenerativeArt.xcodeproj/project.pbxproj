@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81BA24E52AF1D31A003A7951 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA24E42AF1D31A003A7951 /* View.swift */; };
 		81EBED022AE81AA400DB0E23 /* GenerativeArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBED012AE81AA400DB0E23 /* GenerativeArtApp.swift */; };
 		81EBED062AE81AA500DB0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBED052AE81AA500DB0E23 /* Assets.xcassets */; };
 		81EBED092AE81AA500DB0E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBED082AE81AA500DB0E23 /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81BA24E42AF1D31A003A7951 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		81EBECFE2AE81AA400DB0E23 /* GenerativeArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerativeArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EBED012AE81AA400DB0E23 /* GenerativeArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeArtApp.swift; sourceTree = "<group>"; };
 		81EBED052AE81AA500DB0E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				81EBED152AE8262200DB0E23 /* Shape.swift */,
 				81EBED182AE8313000DB0E23 /* Coin.swift */,
+				81BA24E42AF1D31A003A7951 /* View.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				81EBED112AE81D3300DB0E23 /* TileView.swift in Sources */,
 				81EBED132AE81D5100DB0E23 /* MosaicView.swift in Sources */,
+				81BA24E52AF1D31A003A7951 /* View.swift in Sources */,
 				81EBED022AE81AA400DB0E23 /* GenerativeArtApp.swift in Sources */,
 				81EBED192AE8313000DB0E23 /* Coin.swift in Sources */,
 				81EBED162AE8262200DB0E23 /* Shape.swift in Sources */,

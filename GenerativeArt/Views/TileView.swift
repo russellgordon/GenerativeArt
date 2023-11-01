@@ -21,8 +21,8 @@ struct TileView: View {
     let flipThree = Coin.flip()
     
     // Choosing my markers
-    let markerOne = Color.red
-    let markerTwo = Color.blue
+    let markerOne = Color(hue: 24.0/360, saturation: 0.74, brightness: 0.78)
+    let markerTwo = Color(hue: 200.0/360, saturation: 0.33, brightness: 0.31)
     
     // Decide on colors
     let flipForColor = Coin.flip()
